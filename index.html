@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Anamnese</title>
+    
+</head>
+<body>
+   
+
+<div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">LN</h1>
+      <h2 class="text-center">Nutricionista</h2>
+      <h3 id="description" class="description text-center">
+        CRN-3 66738
+      </h3>
+    </header>
+    <form id="survey-form" action="https://api.staticforms.xyz/submit" method="post" class="card">
+      <input type="hidden" name="accessKey" value="287f4b9e-1657-4179-917f-d397c27261d0">
+      <input type="hidden" name="redirectTo" value="https://jonathanmartinsnc.github.io/consultanutricional_ln/">
+      <div class="form-group">
+        <label id="name-label" for="name">Nome</label>
+        <input
+          type="text"
+          name="$nome"
+          id="name"
+          class="form-control"
+          placeholder="Digite aqui"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">E-mail</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Digite aqui"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number"
+          >Telefone para contato<span class="clue"></span></label
+          >
+        <input
+          type="number"
+          name="$TelefoneParaContato"
+          id="telefone"
+          min="9999999"
+          max="999999999999"
+          class="form-control"
+          placeholder="Digite aqui"
+        />
+    </div>
+      <div class="form-group">
+        <label id="number-label" for="number"
+          >Idade<span class="clue"></span></label
+          >
+        <input
+          type="number"
+          name="$Idade"
+          id="idade"
+          min="10"
+          max="99"
+          class="form-control"
+          placeholder="Digite aqui"
+        />
+    </div>
+      <div class="form-group">
+        <label id="number-label" for="number"
+          >Altura<span class="clue"></span></label
+          >
+        <input
+          type="text"
+          name="$Altura"
+          id="number"
+          min="0"
+          max="10000"
+          class="form-control"
+          placeholder="Digite aqui"
+        />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number"
+          >Peso<span class="clue"></span></label
+          >
+        <input
+          type="number"
+          name="$Peso"
+          id="peso"
+          min="0"
+          max="10000"
+          class="form-control"
+          placeholder="Digite aqui"
+        />
+      </div>
+      <div class="form-group">
+        <p>Qual o objetivo do tratamento?</p>
+        <select id="dropdown" name="$ObjetivoTratamento" class="form-control" required>
+          <option disabled selected value>Selecione</option>
+          <option value="Perda de peso">Perda de peso</option>
+          <option value="Ganho de massa">Ganho de massa</option>
+          <option value="Reeducação alimentar">Reeducação alimentar</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Quais alimentos tem preferencia?</p>
+        <textarea
+          id="AlimentosUP"
+          class="input-textarea"
+          name="$PreferenciaAlimentar"
+          placeholder="Digite aqui"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <p>Quais alimentos não gosta de ingerir?</p>
+        <textarea
+          id="AlimentosDOWN"
+          class="input-textarea"
+          name="$AverçõesAlimentares"
+          placeholder="Digite aqui"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <p>Possui alguma doença crônica? Se sim, qual?</p>
+        <textarea
+          id="DoençaCronica"
+          class="input-textarea"
+          name="$PossuiDoencaCronica"
+          placeholder="Digite aqui"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <p>Quantas refeições faz durante o dia? Em quais horários e locais você realiza sua refeições?</p>
+        <textarea
+          id="RefDD"
+          class="input-textarea"
+          name="$QuantosRefeicoesFazNoDia"
+          placeholder="Digite aqui"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <p>Como são seus horários? (ex: Trabalho, faculdade, academia)?</p>
+        <textarea
+          id="horarios"
+          class="input-textarea"
+          name="$HorariosDeRotina"
+          placeholder="Digite aqui"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <p>Pratica atividade física? Qual? Considera a atividade leve, moderada ou pesada?</p>
+        <textarea
+          id="atvfisica"
+          class="input-textarea"
+          name="$AtividadeFisica"
+          placeholder="Digite aqui"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <p>Possui alergia á algum alimento?</p>
+        <textarea
+          id="alergia"
+          class="input-textarea"
+          name="$AlergiaAlimentar"
+          placeholder="Digite aqui"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <p>Utiliza algum medicamento ou suplemento? Se sim, qual?</p>
+        <textarea
+          id="medicamento"
+          class="input-textarea"
+          name="$MedicamentoOuSuplemento"
+          placeholder="Digite aqui"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <p>Quantos litros de água ingere por dia?</p>
+        <textarea
+          id="agua"
+          class="input-textarea"
+          name="$LitrosDeAgua"
+          placeholder="Digite aqui"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <p>Em sua família, algum parente possui doença crônica? Se sim, qual?</p>
+        <textarea
+          id="fdoença"
+          class="input-textarea"
+          name="$ParenteDoencaCronica"
+          placeholder="Digite aqui"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Enviar
+        </button>
+      </div>
+    </form>
+  </div> 
+  <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
+
